@@ -201,26 +201,3 @@
             <li>Contact</li>
         </ul>
  </footer>
-
-    <script>
-        // Sélectionne tous les éléments avec la classe "card-plat"
-const cards = document.querySelectorAll('.card-plat');
-
-// Parcoure chaque carte et ajoute un événement pour le clic
-cards.forEach(card => {
-    card.addEventListener('click', () => {
-        // Sélectionne l'élément .check à l'intérieur de la carte 
-        const check = card.querySelector('.check');
-
-        // Vérifie si la classe "active" est présente sur l'élément .check
-        const isActive = check.classList.contains('active');
-
-        // Si .check est actif, désactive-le, sinon active-le
-        if (isActive) {
-            check.classList.remove('active');
-        } else {
-            check.classList.add('active');
-        }
-    });
-});
-    </script>
